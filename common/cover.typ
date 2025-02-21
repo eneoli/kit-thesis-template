@@ -16,7 +16,7 @@
     #grid(
       columns: (auto),
       rows: (auto),
-      [#image("../assets/Logo_KIT.png", width: 115pt)],
+      [#image("../assets/Logo_KIT.svg", width: 115pt)],
     )
 
     #pad(top: 75pt)[
