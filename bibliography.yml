@@ -1,0 +1,13 @@
+loefTruthProposition:
+  type: article
+  title: Truth of a proposition, evidence of a judgement, validity of a proof
+  author: Per Martin-Löf
+  date: 1987
+  page-range: 407-420
+  serial-number:
+    doi: https://doi.org/10.1007/BF00484985
+  parent:
+    type: periodical
+    title: Synthese
+    issue: 3
+    volume: 73
