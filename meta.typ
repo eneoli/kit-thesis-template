@@ -13,4 +13,5 @@
 #let department = [Informatics]
 #let institute = [Institute of Magic]
 
-#let statutoryDeclarationPlaceAndDate = [Karlsruhe, October 1, 2024]
+#let statutoryDeclarationPlaceAndDate = [Karlsruhe, February 31, 2024]
+#let completionPeriod = "30. February 2024 - 31. February 2024"

@@ -12,7 +12,7 @@
     bottom-left: 15pt,
   ), 
   stroke: rgb("#8a8a8a") + 1pt,
-  inset: 20pt, [
+  inset: 1cm, [
     #grid(
       columns: (auto),
       rows: (auto),
@@ -49,26 +49,41 @@
       ]
     ]
 
-    #pad(top: 120pt)[
+    #pad(top: 50pt)[
       #align(center,
         [#grid(
           columns: (auto, auto),
           rows: (auto),
           align: (left, left),
-          gutter: (10pt, 15pt, 10pt, 15pt, 10pt, 15pt),
-          [#text(size: 12pt)[First examiner:]],
+          column-gutter: 5em,
+          row-gutter: 1em,
+          [#text(size: 12pt)[First Reviewer:]],
           [#text(size: 12pt)[#reviewerOne]],
 
-          { if reviewerTwo != none [#text(size: 12pt)[Second examiner:]] },
+          { if reviewerTwo != none [#text(size: 12pt)[Second Reviewer:]] },
           { if reviewerTwo != none [#text(size: 12pt)[#reviewerTwo]] },
 
-          [#text(size: 12pt)[First advisor:]],
+          grid.cell(colspan: 2, v(1em)),
+
+          {if advisorTwo == none [#text(size: 12pt)[Advisor:]] else [#text(size: 12pt)[First Advisor:]]},
           [#text(size: 12pt)[#advisorOne]],
 
-          { if advisorTwo != none [#text(size: 12pt)[Second advisor:]] },
+          { if advisorTwo != none [#text(size: 12pt)[Second Advisor:]] },
           { if advisorTwo != none [#text(size: 12pt)[#advisorTwo]] },
         )]
       )
+    ]
+    #pad(top: 40pt)[
+      #align(center)[
+        #grid(
+          columns: (auto, auto),
+          rows: (auto),
+          column-gutter: 2.5em,
+          align: (left, right),
+          [Completion period:],
+          [#completionPeriod],
+        )
+      ]
     ]
   ]
 )
