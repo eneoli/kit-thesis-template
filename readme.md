@@ -6,7 +6,7 @@
 
 ## Quick start guide
 
-- Add your informations under `meta.typ`
+- Add your information under `meta.typ`
 - Add your abstract under `abstract.typ`
 - Start writing in `content.typ`
 - Compile `thesis.typ`
